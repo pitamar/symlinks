@@ -15,7 +15,6 @@ symlinks: symlinks.c
 
 install: all symlinks.8
 	$(INSTALL) -c -o $(OWNER) -g $(GROUP) -m 755 symlinks $(BINDIR)
-	$(INSTALL) -c -o $(OWNER) -g $(GROUP) -m 644 symlinks.8 $(MANDIR)
 
 .PHONY: clean
 clean:
